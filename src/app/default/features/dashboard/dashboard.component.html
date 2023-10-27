@@ -1,0 +1,238 @@
+<div class="dashboard">
+    <div class="main-content">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- breadcrumbs here -->
+        </div>
+        <div class="row px-3">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="row card-header card-header-warning card-header-icon">
+                <div class="card-icon">
+                  <i class="fa-solid fa-bell-concierge"></i>
+                </div>
+                <div class="col-4 p-0"></div>
+                <div class="col-8 p-0">
+                  <p class="card-category">Total Active Clients</p>
+                  <!-- <p class="card-category">Total Restaurants</p> -->
+                  <h3 class="card-title">5</h3>
+                  <!-- <h3 class="card-title">
+                    5/5
+                  </h3> -->
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="stats">
+                  <i class="me-2 fa-solid fa-triangle-exclamation"></i>
+                  <label for="">Get More Space...</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="row card-header card-header-success card-header-icon">
+                <div class="card-icon">
+                  <i class="me-2 fa-solid fa-indian-rupee-sign"></i>
+                </div>
+                <div class="col-4 p-0"></div>
+                <div class="col-8 p-0">
+                  <p class="card-category">Total Subscriptions Sale</p>
+                  <!-- <p class="card-category">Total Revenue</p> -->
+                  <h3 class="card-title">2</h3>
+                  <!-- <h3 class="card-title">₹234,245</h3> -->
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="stats">
+                  <i class="me-2 fa-solid fa-tag"></i
+                  ><label for=""> Overall</label>
+                  <!-- <i class="me-2 fa-regular fa-calendar-days"></i><label for=""> Last 24 Hours</label> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="row card-header card-header-danger card-header-icon">
+                <div class="card-icon">
+                  <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="col-4 p-0"></div>
+                <div class="col-8 p-0">
+                  <p class="card-category">Clients Approach</p>
+                  <h3 class="card-title">75</h3>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="stats">
+                  <i class="me-2 fa-regular fa-calendar-days"></i
+                  ><label for="">Daily/Weekly/Monthly </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="row card-header card-header-info card-header-icon">
+                <div class="card-icon">
+                </div>
+                <div class="col-4 p-0"></div>
+                <div class="col-8 p-0">
+                  <p class="card-category">Followers</p>
+                  <h3 class="card-title">+245</h3>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="stats">
+                  <i class="me-2 fa-solid fa-clock-rotate-left"></i
+                  ><label for="">Just Updated</label>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <div class="row px-3">
+          <div class="col-md-6 mt-3 mb-5">
+            <div class="card card-chart p-3">
+              <div class="bg-white border-0 card-header card-header-success">
+                <!-- <canvas class="ct-chart" id="dailySalesChart"></canvas> -->
+              </div>
+              <div class="card-body p-0">
+                <h4 class="card-title">Daily Approaches</h4>
+                <!-- <h4 class="card-title">Daily Sales</h4> -->
+                <p class="card-category">
+                  <span class="text-success"
+                    ><i class="fa fa-long-arrow-up"></i> 55%
+                  </span>
+                  increase in today sales.
+                </p>
+              </div>
+              <div class="card-footer pt-2 p-0 bg-white">
+                <div class="stats">
+                  <i class="fa-regular fa-clock"></i> updated 4 minutes ago
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mt-3 mb-5">
+            <div class="card card-chart p-3">
+              <div class="bg-white border-0 card-header card-header-warning">
+                <div class="ct-chart" id="websiteViewsChart"></div>
+              </div>
+              <div class="card-body p-0">
+                <h4 class="card-title">Email Subscriptions</h4>
+                <p class="card-category">Last Campaign Performance</p>
+              </div>
+              <div class="card-footer pt-2 p-0 bg-white">
+                <div class="stats">
+                  <i class="fa-regular fa-clock"></i> campaign sent 2 days ago
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row px-3">
+          <div class="col-lg-12 col-md-12 mt-2 mb-5">
+            <div class="card p-3 restro-info">
+              <div class="bg-white border-0 card-header-warning">
+                <h4 class="card-title">Top 5 Clients Stats</h4>
+              </div>
+              <div class="p-0 card-body table-responsive">
+                <table class="table table-hover">
+                  <thead class="text-warning text-center">
+                    <th class="p-2">ID</th>
+                    <th class="p-2">Client Name</th>
+                    <th class="p-2">Subscribed</th>
+                    <th class="p-2">Sales</th>
+                    <th class="p-2">Status</th>
+                  </thead>
+                  <tbody class="text-center">
+                    <tr>
+                      <td>1</td>
+                      <td>Client 1</td>
+                      <td>Yes</td>
+                      <td>₹2340</td>
+                      <td>Active</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Client 2</td>
+                      <td>Yes</td>
+                      <td>₹2340</td>
+                      <td>Active</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Client 3</td>
+                      <td>No</td>
+                      <td>₹2340</td>
+                      <td>Active</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Client 4</td>
+                      <td>No</td>
+                      <td>₹2340</td>
+                      <td>Active</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Client 5</td>
+                      <td>No</td>
+                      <td>₹2340</td>
+                      <td>Active</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-lg-12 col-md-12 mt-2 mb-5">
+            <div class="card p-3 restro-info">
+              <div class="bg-white border-0 card-header card-header-warning">
+                <h4 class="card-title">Restaurant Stats</h4>
+              </div>
+              <div class="p-0 card-body table-responsive">
+                <table class="table table-hover text-center">
+                  <thead class="text-warning">
+                    <th class="p-2">ID</th>
+                    <th class="p-2">Name</th>
+                    <th class="p-2">Salary</th>
+                    <th class="p-2">Country</th>
+                  </thead>
+                  <tbody class="text-center">
+                    <tr>
+                      <td>1</td>
+                      <td>Checkers</td>
+                      <td>₹36,738</td>
+                      <td>INDIA</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Ashoka</td>
+                      <td>₹23,789</td>
+                      <td>INDIA</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Haldiram</td>
+                      <td>₹56,142</td>
+                      <td>INDIA</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Absolute Barbecue</td>
+                      <td>₹38,735</td>
+                      <td>INDIA</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  

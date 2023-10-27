@@ -1,0 +1,56 @@
+<div
+  id="nav"
+  class="container p-1 h-100"
+  [class.sidenav]="isCollapseNav == true"
+>
+  <div class="wrapper h-100">
+    <div class="logo">
+      <img src="../../../../assets/logo.svg" alt="" />
+      <div class="collapse-icon" (click)="collapseNav()">
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+    </div>
+    <div class="features">
+      <div class="item-box w-100">
+        <div *ngFor="let item of items">
+          <a
+            [class.active]="item.title == active"
+            class="nav-tabs mt-3"
+            (click)="collapseTo(item.title)"
+            (mouseup)="item.isOpen = !item.isOpen"
+          >
+            <i id="icon" class="{{ item.icon }}"></i>
+            <p>{{ item.title }}</p>
+            <i *ngIf="!item.isOpen" id="arrow" class="{{ item.arrow }}"></i>
+            <i
+              *ngIf="item.subMenu != null && item.isOpen"
+              id="arrow"
+              class="fa-solid fa-chevron-down"
+            ></i>
+          </a>
+          <div
+            *ngIf="item.subMenu != null && item.isOpen"
+            class="sub-menu"
+            [class.collapse]="item.title != active"
+          >
+            <ul class="sub-menu-list">
+              <li class="sub-menu-item" *ngFor="let subItem of item.subMenu">
+                <i id="icon" class="{{ subItem.subIcon }}"></i>
+                <p>{{ subItem.subTitle }}</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="subscription">
+        <a class="nav-tabs my-3">
+          <i class="fa-solid fa-dollar-sign"></i>
+          <p>Upgrade To Pro</p>
+        </a>
+      </div>
+      <div class="collapse-icon1" (click)="expandNav()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </div>
+</div>
